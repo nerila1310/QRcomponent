@@ -16,14 +16,22 @@ img{
     background-color: hsl(212, 45%, 89%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .center{
     background-color: hsl(0, 0%, 100%);
-    width: 16%;
+    width: 85%;
     border-radius: 15px;
+}
+
+
+@media (min-width: 376px) {
+    .center{
+        width: 16%;
+    }
 }
 
 .content{
@@ -35,11 +43,36 @@ img{
     border-radius: 15px;
 }
 
-.content p{
-    padding: 5px;
-    color: hsl(220, 15%, 55%);
-    font-size: small;
+.content h3{
+    font-size: 23px;
+    margin-bottom: 0;
+}
+@media (min-width: 376px) {
+    .content h3{
+        font-size: 19px;
+    }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.content p{
+    padding: 8px;
+    color: hsl(220, 15%, 55%);   
+}
+
+@media (min-width: 376px) {
+    .content p{
+        font-size: small;
+        margin-bottom: 0;
+    }
+}
+
+/* font-size: 1.17em; */
+
+.attribution { 
+    margin-top: 5px;
+    font-size: 8px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
